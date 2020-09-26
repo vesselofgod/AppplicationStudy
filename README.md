@@ -16,3 +16,40 @@ If you're working on multiple projects, then go ahead and create multiple enviro
 
 If you run into any problems, see our [troubleshooting documentation](https://docs.microsoft.com/en-us/visualstudio/online/resources/troubleshooting) for potential workarounds. Additionally, if you have any questions and/or feedback, please don't hesitate to reach out to the team on [GitHub](https://github.com/MicrosoftDocs/vscodespaces).
 
+
+2. React Native 프로젝트 생성
+
+sudo npm install -g react-native-cli
+cd ..
+react-native init worksapce
+
+3. Android SDK 설치
+cd ~
+wget https://dl.google.com/android/repository/commandlinetools-linux-6609375_latest.zip
+unzip commandlinetools-linux-6609375_latest.zip
+rm commandlinetools-linux-6609375_latest.zip
+mkdir android-sdk
+mv tools android-sdk/tools
+
+4. PATH 설정 (.bachrc에 추가)
+export ANDROID_HOME=$HOME/android-sdk
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+5. PATH 설정 후
+source .bashrc
+
+6. SDK 설치
+- project_root/android/build.gradle 을 통해 Android 버전 확인
+- 확인 후 아래 명령어를 통해 Android 28버전 설치
+sdkmanager --sdk_root=${ANDROID_HOME} "platform-tools" "platforms;android-28"
+
+7. apk 빌드 및 생성
+- 빌드
+workspace/android/.gradlew assembleDebug
+- 생성 위치 : workspace/android/app/build/outputs/apk/debug/
+
+8. Git 저장소에 업로드
+- APK 파일을 저장소에 업로드(프로젝트가 GitHub에 업로드 되어 있을 경우)
+git add workspace/android/app/build/outputs/apk/debug/apk_name.apk
+- Commit & Push
