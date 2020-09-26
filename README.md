@@ -17,32 +17,31 @@ If you're working on multiple projects, then go ahead and create multiple enviro
 If you run into any problems, see our [troubleshooting documentation](https://docs.microsoft.com/en-us/visualstudio/online/resources/troubleshooting) for potential workarounds. Additionally, if you have any questions and/or feedback, please don't hesitate to reach out to the team on [GitHub](https://github.com/MicrosoftDocs/vscodespaces).
 
 
-2. React Native 프로젝트 생성
+## 2. React Native 프로젝트 생성
+- sudo npm install -g react-native-cli
+- cd ..
+-react-native init worksapce
 
-sudo npm install -g react-native-cli
-cd ..
-react-native init worksapce
+## 3. Android SDK 설치
+- cd ~
+- wget https://dl.google.com/android/repository/commandlinetools-linux-6609375_latest.zip
+- unzip commandlinetools-linux-6609375_latest.zip
+- rm commandlinetools-linux-6609375_latest.zip
+- mkdir android-sdk
+- mv tools android-sdk/tools
 
-3. Android SDK 설치
-cd ~
-wget https://dl.google.com/android/repository/commandlinetools-linux-6609375_latest.zip
-unzip commandlinetools-linux-6609375_latest.zip
-rm commandlinetools-linux-6609375_latest.zip
-mkdir android-sdk
-mv tools android-sdk/tools
+## 4. PATH 설정 (.bachrc에 추가)
+- export ANDROID_HOME=$HOME/android-sdk
+- export PATH=$PATH:$ANDROID_HOME/tools/bin
+- export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-4. PATH 설정 (.bachrc에 추가)
-export ANDROID_HOME=$HOME/android-sdk
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+## 5. PATH 설정 후
+- source .bashrc
 
-5. PATH 설정 후
-source .bashrc
-
-6. SDK 설치
+## 6. SDK 설치
 - project_root/android/build.gradle 을 통해 Android 버전 확인
 - 확인 후 아래 명령어를 통해 Android 28버전 설치
-sdkmanager --sdk_root=${ANDROID_HOME} "platform-tools" "platforms;android-28"
+- sdkmanager --sdk_root=${ANDROID_HOME} "platform-tools" "platforms;android-28"
 
 7. apk 빌드 및 생성
 - 빌드
