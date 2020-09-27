@@ -20,7 +20,7 @@ If you run into any problems, see our [troubleshooting documentation](https://do
 ## 2. React Native 프로젝트 생성
 - npm install -g react-native-cli
 - cd ..
-- react-native init worksapce
+- react-native init workspace
 
 ## 3. Android SDK 설치
 - cd ~
