@@ -44,8 +44,8 @@ If you run into any problems, see our [troubleshooting documentation](https://do
 - sdkmanager --sdk_root=${ANDROID_HOME} "platform-tools" "platforms;android-28"
 
 7. apk 빌드 및 생성
-- 빌드
-workspace/android/.gradlew assembleDebug
+- 빌드(cd workspace/android로 와서 실행)
+./gradlew assembleDebug
 - 생성 위치 : workspace/android/app/build/outputs/apk/debug/
 
 8. Git 저장소에 업로드
