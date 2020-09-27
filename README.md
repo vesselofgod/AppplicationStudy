@@ -6,16 +6,7 @@ Clone a repo, edit some code, [spin up a terminal](https://docs.microsoft.com/en
 
 If you're working on multiple projects, then go ahead and create multiple environments. You can quickly switch between them, knowing that each one has its own dedicated resources. Additionally, feel free to spin up environments for ad-hoc tasks such as reviewing a PR or doing some pair programming with a colleague. With Visual Studio Codespaces, you can eradicate setup from all of your everyday tasks 🔥 🙌
 
-## Helpful Resources
-
-* [What is Visual Studio Codespaces?](https://docs.microsoft.com/en-us/visualstudio/online/overview/what-is-vsonline)
-* [How-to Guide: VS Code](https://docs.microsoft.com/en-us/visualstudio/online/how-to/vscode#install)
-* [How-to Guide: Browser](https://docs.microsoft.com/en-us/visualstudio/online/how-to/browser#create-an-environment)
-* [Environment configuration](https://docs.microsoft.com/en-us/visualstudio/online/reference/configuring)
-* [Environment personalization](https://docs.microsoft.com/en-us/visualstudio/online/reference/personalizing)
-
-If you run into any problems, see our [troubleshooting documentation](https://docs.microsoft.com/en-us/visualstudio/online/resources/troubleshooting) for potential workarounds. Additionally, if you have any questions and/or feedback, please don't hesitate to reach out to the team on [GitHub](https://github.com/MicrosoftDocs/vscodespaces).
-
+## 1. 터미널 열기
 
 ## 2. React Native 프로젝트 생성
 - npm install -g react-native-cli
