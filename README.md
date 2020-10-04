@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Visual Studio Codespaces
 
 Welcome to Visual Studio Codespaces! This environment provides you with a full-fidelity development experience, that is accessible from anywhere. It's the same Visual Studio Code experience you already know and love, only powered by the cloud 💙 ☁️
@@ -43,3 +44,6 @@ If you're working on multiple projects, then go ahead and create multiple enviro
 - APK 파일을 저장소에 업로드(프로젝트가 GitHub에 업로드 되어 있을 경우)
 git add workspace/android/app/build/outputs/apk/debug/apk_name.apk
 - Commit & Push
+=======
+# rn-heartbeat
+>>>>>>> 2a231d4... test
